@@ -10,6 +10,17 @@ namespace StopWatch
             Start(6);
         }
 
+         static void Menu()
+
+        {
+            System.Console.Clear();
+            System.Console.WriteLine();
+            System.Console.WriteLine(" S = Segundos ");
+            System.Console.WriteLine(" M = Minutos ");
+            System.Console.WriteLine(" E = Sair ");
+            System.Console.WriteLine(" Quanto tempo deseja contar? ");
+        }
+
         static void Start( int time)
         {
            
