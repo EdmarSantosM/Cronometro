@@ -15,14 +15,16 @@ namespace StopWatch
         {
             System.Console.Clear();
             System.Console.WriteLine();
-            System.Console.WriteLine(" S = Segundos => 10s");
-            System.Console.WriteLine(" M = Minutos => 1m");
+            System.Console.WriteLine(" S = Segundos => '10s' segundos ");
+            System.Console.WriteLine(" M = Minutos => '1m' minutos ");
             System.Console.WriteLine(" E = Sair ");
             System.Console.WriteLine("");
-            System.Console.WriteLine(" Quanto tempo deseja contar? ");
+            System.Console.Write(" Quanto tempo deseja contar? ");
 
             string data = Console.ReadLine().ToLower();
+            char type = char.Parse(data.Substring(data.Length - 1,1));
             System.Console.WriteLine(data);
+            System.Console.WriteLine(type);
         }
 
         static void Start( int time)
