@@ -6,7 +6,7 @@ namespace StopWatch
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Start();
         }
 
         static void Start()
@@ -17,6 +17,7 @@ namespace StopWatch
             while(currentTime != time)
             {
                 currentTime++;
+                System.Console.WriteLine(currentTime);
             }
         }
     }
