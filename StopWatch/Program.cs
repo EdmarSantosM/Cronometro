@@ -25,6 +25,7 @@ namespace StopWatch
 
             System.Console.Clear();
             System.Console.WriteLine("Cronômentro finalizado !");
+            Thread.Sleep(2500);
         }
     }
 }
