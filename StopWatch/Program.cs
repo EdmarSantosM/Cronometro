@@ -7,7 +7,7 @@ namespace StopWatch
     {
         static void Main(string[] args)
         {
-            Start(6);
+            Menu();
         }
 
          static void Menu()
@@ -18,6 +18,7 @@ namespace StopWatch
             System.Console.WriteLine(" S = Segundos ");
             System.Console.WriteLine(" M = Minutos ");
             System.Console.WriteLine(" E = Sair ");
+            System.Console.WriteLine("");
             System.Console.WriteLine(" Quanto tempo deseja contar? ");
         }
 
