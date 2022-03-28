@@ -1,7 +1,6 @@
-# Cronometro
+# Cronômetro
+
  Cronômetro em Console
-
-
 
 - Limpa  a tela
 - Exibe mensagem
