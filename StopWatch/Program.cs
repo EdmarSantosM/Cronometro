@@ -12,6 +12,7 @@ namespace StopWatch
 
          static void Menu()
 
+
         {
             System.Console.Clear();
             System.Console.WriteLine();
@@ -23,7 +24,9 @@ namespace StopWatch
             System.Console.WriteLine(" M = Minutos => '1m' minutos ");
             System.Console.WriteLine(" E = Sair ");
             System.Console.WriteLine("");
-            System.Console.Write(" Quanto tempo deseja contar? ");
+            System.Console.WriteLine(" ================================= ");
+            System.Console.WriteLine("    Quanto tempo deseja contar? ");
+            System.Console.WriteLine(" ================================= ");
 
             string data = Console.ReadLine().ToLower();
             char type = char.Parse(data.Substring(data.Length - 1,1));
@@ -37,7 +40,7 @@ namespace StopWatch
             if ( time == 0)
                 System.Environment.Exit(0);
 
-                Start(time * multiplier);
+                PreStart(time * multiplier);
 
 
                 
@@ -45,6 +48,21 @@ namespace StopWatch
           
         }
 
+        static void PreStart(int time)
+        {
+            System.Console.Clear();
+            System.Console.WriteLine();
+            System.Console.WriteLine(" Um ...");
+            Thread.Sleep(1200);
+            System.Console.WriteLine(" Dois ...");
+            Thread.Sleep(1200);
+            System.Console.WriteLine(" Três ...");
+            Thread.Sleep(1200);
+            System.Console.WriteLine(" Começa agora ...");
+            Thread.Sleep(1500);
+
+            Start(time);
+        }
         static void Start( int time)
         {
            
@@ -54,13 +72,13 @@ namespace StopWatch
             {
                 System.Console.Clear();
                 currentTime++;
-                System.Console.WriteLine($" ...\n {currentTime} ");
+                System.Console.Write($"\n\n...{currentTime} ");
                 Thread.Sleep(1000);
             }
 
             System.Console.Clear();
-            System.Console.WriteLine("Cronômentro finalizado !");
-            Thread.Sleep(2500);
+            System.Console.WriteLine(" Cronômentro finalizado !");
+            Thread.Sleep(2300);
             Menu();
         }
     }
