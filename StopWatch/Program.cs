@@ -15,6 +15,10 @@ namespace StopWatch
         {
             System.Console.Clear();
             System.Console.WriteLine();
+            System.Console.WriteLine(" ================================= ");
+            System.Console.WriteLine("     Cronômetro  via Console ");
+            System.Console.WriteLine(" ================================= ");
+            System.Console.WriteLine();
             System.Console.WriteLine(" S = Segundos => '10s' segundos ");
             System.Console.WriteLine(" M = Minutos => '1m' minutos ");
             System.Console.WriteLine(" E = Sair ");
@@ -50,13 +54,14 @@ namespace StopWatch
             {
                 System.Console.Clear();
                 currentTime++;
-                System.Console.WriteLine(currentTime);
+                System.Console.WriteLine($" ...\n {currentTime} ");
                 Thread.Sleep(1000);
             }
 
             System.Console.Clear();
             System.Console.WriteLine("Cronômentro finalizado !");
             Thread.Sleep(2500);
+            Menu();
         }
     }
 }
